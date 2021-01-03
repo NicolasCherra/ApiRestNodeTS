@@ -1,5 +1,5 @@
 import express from "express";
-import IndexRoutes from "./routes";
+import RoutesNotes from "./routes/RoutesNotes";
 import  "./database";
 
 //Init
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //Routes
-app.use(IndexRoutes);
+app.use(RoutesNotes);
 
 //Start Server
 app.listen(app.get("port"), () => {
