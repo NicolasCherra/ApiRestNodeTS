@@ -1,7 +1,7 @@
 import mongoose, { Mongoose } from "mongoose";
 
 const mongodbURI = "";
-
+ 
 mongoose
   .connect(mongodbURI, {
     useNewUrlParser: true,
