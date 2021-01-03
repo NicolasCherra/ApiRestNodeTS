@@ -11,8 +11,6 @@ class RoutesNotes {
     }
 
     config(): void {
-        this.router.get('/', controllerNotes.index);
-        this.router.get('/add', controllerNotes.renderFormNote);
         this.router.post('/add', controllerNotes.saveNote);
     }
 

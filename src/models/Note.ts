@@ -1,15 +1,13 @@
 import mongoose,{ model, Schema } from "mongoose";
 
 export interface Note extends mongoose.Document {
-  title: string;
-  author: string;
-  isbn: string;
+  descripcion: String,
+  ultimaModificacion: Date
 }
 
 const NoteSchema = new Schema({
-  title: String,
-  author: String,
-  isbn: String,
+  descripcion: String,
+  ultimaModificacion: Date
 });
 
 export default model<Note>("Note", NoteSchema);
